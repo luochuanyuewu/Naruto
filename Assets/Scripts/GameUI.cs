@@ -19,7 +19,7 @@ public class GameUI : MonoBehaviour
 	
 	void Update () 
 	{
-		scoreHub.GetComponent<Text>().text = "你坚持了:" + ((int)GameManager.score).ToString() + "秒";	
+		scoreHub.GetComponent<Text>().text = "You hold this game for " + ((int)GameManager.score).ToString() + " seconds,keep moving!";	
 	}
 	
 	public void StartGame ()
@@ -63,7 +63,7 @@ public class GameUI : MonoBehaviour
 		newGamePanel.SetActive(false);
 		gameOverPanel.SetActive(true);
 		scoreHub.SetActive(false);
-		gameOverPanel.transform.FindChild("FinalScore").GetComponent<Text>().text = "你只坚持了:" + ((int)GameManager.score).ToString() + "秒";
+		gameOverPanel.transform.FindChild("FinalScore").GetComponent<Text>().text = "You only hold this game for " + ((int)GameManager.score).ToString() + " sceonds.Play again?";
 		
 	}
 }
