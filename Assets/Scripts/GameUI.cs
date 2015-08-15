@@ -7,7 +7,6 @@ public class GameUI : MonoBehaviour
 	public GameObject newGamePanel;
 	public GameObject gameOverPanel;
 	public GameObject scoreHub;
-	
 
 	void Start () 
 	{
@@ -19,6 +18,7 @@ public class GameUI : MonoBehaviour
 	
 	void Update () 
 	{
+
 		scoreHub.GetComponent<Text>().text = "You hold this game for " + ((int)GameManager.score).ToString() + " seconds,keep moving!";	
 	}
 	
@@ -39,7 +39,7 @@ public class GameUI : MonoBehaviour
 
 	public void OpenWebsite ()
 	{
-		Application.OpenURL("www.doyourgame.com");
+		Application.OpenURL("http://www.doyourgame.com");
 	}
 
 
