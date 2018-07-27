@@ -39,7 +39,7 @@ public class GameUI : MonoBehaviour
 
 	public void OpenWebsite ()
 	{
-		Application.OpenURL("http://www.doyourgame.com");
+		Application.OpenURL("http://www.luochuanyuewu.com");
 	}
 
 
@@ -63,7 +63,7 @@ public class GameUI : MonoBehaviour
 		newGamePanel.SetActive(false);
 		gameOverPanel.SetActive(true);
 		scoreHub.SetActive(false);
-		gameOverPanel.transform.FindChild("FinalScore").GetComponent<Text>().text = "You only hold this game for " + ((int)GameManager.score).ToString() + " sceonds.Play again?";
+		gameOverPanel.transform.Find("FinalScore").GetComponent<Text>().text = "You only hold this game for " + ((int)GameManager.score).ToString() + " sceonds.Play again?";
 		
 	}
 }
